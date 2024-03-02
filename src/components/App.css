@@ -1,0 +1,14 @@
+body{
+   background-color: aquamarine;
+}
+ul{
+    color:yellow;
+    display: inline-block;
+    background-color: bisque;
+}
+li{
+color: azure;
+}
+Link{
+    color: blue;
+}

@@ -1,0 +1,37 @@
+/* StudentForm.css */
+
+/* Style the form container */
+.form-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form inputs */
+.form-input {
+  margin-bottom: 10px;
+}
+
+/* Style labels */
+.form-label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Style the submit button */
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
