@@ -2,7 +2,6 @@ import React from "react";
 import "./Header.css";
 
 const Header = () => {
-  // Sample user data
   const user = {
     name: "Vijay Kummari",
     profileImage:
@@ -12,7 +11,6 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        {/* Insert your logo here */}
         <img
           src="https://se-images.campuslabs.com/clink/images/099b498c-4ada-49b2-a492-e88be1cd4b23a147a43b-a947-4878-9020-b6c38e9f074e.jpg?preset=med-sq"
           alt="Logo"

@@ -6,7 +6,7 @@ import Transportation from "./components/Transportation";
 import Employment from "./components/Employment";
 import Resources from "./components/Resources";
 import Community from "./components/Community";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
 import Gallery from "./components/Gallery";
@@ -18,20 +18,25 @@ import UserList from "./components/UserList";
 import StudentForm from "./components/StudentForm";
 import StudentList from "./components/displaystudentdata";
 import DataDisplay from "./components/Accommodationdisplay";
+import AccommodationDetails from "./components/AccommodationDetails";
+
+import React, { useState } from "react";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(
+    localStorage.getItem("isLoggedIn")
+  );
   // axios.defaults.headers.common[
   //   "Authorization"
   // ] = `Bearer ${localStorage.token}`;
+
   return (
     <BrowserRouter>
-      {/* <Header /> */}
-      {/* <Footer /> */}
-      {localStorage.getItem("isLoggedIn") && <Header />}
+      {isLoggedIn && <Header />}
+
       <Routes>
-        {/* <Route path='/header' element={<Header/>}/> */}
-        <Route path="/Home" element={<Home />} />
         <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Registration />} />
 
@@ -46,9 +51,9 @@ function App() {
         <Route path="/StudentForm" element={<StudentForm />} />
         <Route path="/StudentList" element={<StudentList />} />
         <Route path="/DataDisplay" element={<DataDisplay />} />
+        <Route path="/accommodation/:id" element={<AccommodationDetails />} />
       </Routes>
     </BrowserRouter>
   );
 }
-
 export default App;
