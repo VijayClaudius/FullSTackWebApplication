@@ -20,6 +20,7 @@
 
 import React from "react";
 import "./Home.css";
+import AdminDashboard from "./AdminDashboard";
 
 const Home = () => {
   return (
@@ -37,7 +38,8 @@ const Home = () => {
           <a href="/signup" className="cta-button">
             Signup
           </a>
-          <button className="cta-button logout-button">Logout</button>
+
+          <AdminDashboard />
         </div>
       </div>
       <div className="featured-section">

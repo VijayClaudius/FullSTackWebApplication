@@ -19,7 +19,7 @@ import StudentForm from "./components/StudentForm";
 import StudentList from "./components/displaystudentdata";
 import DataDisplay from "./components/Accommodationdisplay";
 import AccommodationDetails from "./components/AccommodationDetails";
-
+import AdminDashboard from "./components/AdminDashboard";
 import React, { useState } from "react";
 
 function App() {
@@ -52,6 +52,7 @@ function App() {
         <Route path="/StudentList" element={<StudentList />} />
         <Route path="/DataDisplay" element={<DataDisplay />} />
         <Route path="/accommodation/:id" element={<AccommodationDetails />} />
+        <Route path="/Admin/*" element={<AdminDashboard />} />
       </Routes>
     </BrowserRouter>
   );
